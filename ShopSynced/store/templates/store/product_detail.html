@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+
+{% block title %} {{product.title}} {% endblock title %}
+
+{% block content %}
+    {% if product.image %}
+        <div class="image mb-4">
+            <img src="{{ product.image.url }}" alt="Image of {{ product.title }}">
+        </div>
+    {% endif %}
+    <h1 class="text-3xl font-semibold">{{ product.title }}</h1>
+    <p class="text-xs text-grey-500">
+        ${{ product.get_display_price }}
+        -
+        <a href="{% url 'vendor-detail' product.user.id %}">{% firstof product.user.get_full_name product.user.username %}</a>
+    </p>
+    {% if product.description %}
+        <p class="mt-4">
+            {{ product.description }}
+        </p>
+    {% endif %}
+
+    <form method="post" action="{% url 'add-to-cart' product.id %}">
+        {% csrf_token %}
+        <button type="submit" class="mt-4 px-8 py-2 bg-teal-500 text-white inline-block">Add to cart</button>
+    </form>
+{% endblock content %}

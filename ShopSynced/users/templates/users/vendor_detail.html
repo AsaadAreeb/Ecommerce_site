@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{% firstof vendor.get_full_name vendor.username %}{% endblock %}
+{% block content %}
+    <h1 class="text-2xl">{% firstof vendor.get_full_name vendor.username %}</h1>
+
+    <div class="flex flex-wrap">
+        {% for product in products %}
+            <div class="products w-1/3 p-2">
+                <div class="p-4 bg-gray-100">
+                    <a href="{% url 'product-detail' product.category.slug product.slug%}">
+                        {% if product.image %}
+                            <div class="image mb-2">
+                                <img src="{{ product.image.url }}" alt="Image of {{ product.title }}">
+                            </div>
+                        {% endif %}
+                        <h2 class="text-xl">{{ product.title }}</h2>
+                        <p>${{ product.get_display_price }}</p>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}

@@ -1,0 +1,3 @@
+Username : admin
+Email address: admin@shopsynced.com
+Password: testadmin1234

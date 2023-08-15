@@ -1,0 +1,37 @@
+Todo
+    -DONE   create virtual env
+    -DONE   install and setup - django-admin startproject ShopSynced
+    -DONE   Init database, superuser and test run - migrate, createsuperuser and runserver
+    -DONE   create core app for base pages - startapp core, set template\core\.htmls, setup views, setup urls
+    -DONE   create app for userprofiles - startapp users, setup models, makemigrations, migrate
+    -DONE   create app for products - startapp product
+        -DONE   add category model - setup category and product models, makemigrations, migrate
+    -DONE   list out new products on front pages - created ListView
+    -DONE   product detail view - 
+    -DONE   category view - 
+    -DONE   Show vendor on product detail page - 
+    -DONE   Add images to the products - 
+    -DONE   vendor detail page - 
+    -DONE   make it possible to sign in, log in and logout - 
+    -DONE   create my account page - 
+    -DONE   simple search - 
+    -DONE   admin pages for the vendors - 
+    -DONE   add products to the cart - 
+    -DONE   view cart - 
+    -DONE   make it possible to remove product from cart
+    -DONE   make is possible to increment/decrement products in cart
+    -DONE   add thumbnails to the products
+    -DONE   fix the desing on the cart page
+    -DONE   create a checkout page
+    -DONE   seperate shoopers from vendors
+    -DONE   add cart button in menu
+    -DONE   checkout functionality  
+    -DONE   vendor must be able to see their orders
+    -DONE   only authenticated users can proceed to the checkout
+    -implement payment gateway - 
+        -get api keys from stripe
+        -install stripe and add credentials in settings.payment
+        -pass the pub key into the checkout view
+        -create stripe checkout when creating view
+        -create success page
+    -deploy project - 

@@ -1,0 +1,8 @@
+{% extends 'core/base.html' %}
+
+{% block title %} {{ category.title }} {% endblock title %}
+
+{% block content %}
+    <h1 class="text-3xl font-semibold">{{ category.title }}</h1>
+    {% include 'store/partials/products.html' %}
+{% endblock content %}
