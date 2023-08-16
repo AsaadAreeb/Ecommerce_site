@@ -1,4 +1,4 @@
 Help to remember the credentials
-Username : 
+Username : admin
 Email address: 
 Password: 
