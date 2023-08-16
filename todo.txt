@@ -29,9 +29,9 @@ Todo
     -DONE   vendor must be able to see their orders
     -DONE   only authenticated users can proceed to the checkout
     -implement payment gateway - 
-        -get api keys from stripe
-        -install stripe and add credentials in settings.payment
-        -pass the pub key into the checkout view
+        -DONE   get api keys from stripe
+        -DONE   install stripe and add credentials in settings.payment
+        -DONE pass the pub key into the checkout view
         -create stripe checkout when creating view
         -create success page
     -deploy project - 

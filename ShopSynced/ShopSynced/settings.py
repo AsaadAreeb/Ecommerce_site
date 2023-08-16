@@ -61,6 +61,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'ShopSynced.urls'
 
+STRIPE_PUB_KEY = 'pk_test_51NfGb0HMpi22ZajTxKV9UWMQsCjD7kQQh5rkqKesPNqBNnbsfa4fWxR0PDuqAZacQC8XmmIzxBf3M06cTbkGLJoE0083q6P89B'
+STRIPE_SECRET_KEY = 'sk_test_51NfGb0HMpi22ZajTZkyyLFrbH2F3UoZiBunZhHf3s7mi1Hbim0HEGAoSeKHjTSqFcKoaiwYAvweXzOP6g6Rwenbg00VAFOGt5M'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
