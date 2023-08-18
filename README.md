@@ -1,6 +1,8 @@
 # Ecommerce_site
 
 Functionalities:
+
+
 -User Registration and Authentication
 ~Profile Management (Vendors/Shoppers)
 -Responsive Design
